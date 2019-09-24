@@ -1,20 +1,52 @@
-grep -v '^$' Archivito	Me permite buscar todas las lineas ocupadas con texto salteando las lineas en blanco que hay en mi Archivo.
-grep '^$' Cuenta todos los espacios en blanco que hay en mi archivo.
-grep -i el -i lee tanto minuscula como mayuscula. Elimina el case sensitive
-grep -v permite buscar lo contrario a lo que estoy buscando.
-grep -iv Eliminar el case sensitive y busca lo contrario a lo que quiero.
-grep '[a-zA-Z]' Archivito busca todas las palabras de la a a la Z
-grep '[0-9]' busca numeros del 1 al 9 
-grep '^[0-9]' busca el numero del 1 al 9 y muestra la primera cifra
-grep '[^0-9]' no busca ningun numero del 1 al 9
-grep '[0-9]$' la ultima cifra de los numeros que tengan un numero entre 0 y 9
-grep '[0-9$]' lo contrario a arriba
----------------------------------------------------------------------------------------------------------------------
-sed 's/Root/ROOT/' Archivito
-sed 's/Root/ROOT/g' Archivito
-sed '1,2d' Archivito
-sed -e '/Root/d' -e '/ROOT/d' Archivito
-sed -i '/Root/d' Archivito
-
-
 IP: 172.105.153.22
+
+#sudo es el admin
+#nano Sirve para crear un archivo y editar dentro de el
+---------------------------------------------------------------------------------------------------------------------------------------------
+#grep -v '^$' Archivito	Me permite buscar lo contrario a lo que quiero.
+#grep '^$' Cuenta todos los espacios en blanco que hay en mi archivo.
+#grep -i el -i lee tanto minuscula como mayuscula. Elimina el case sensitive
+#grep -v permite buscar lo contrario a lo que estoy buscando.
+#grep -iv Eliminar el case sensitive y busca lo contrario a lo que quiero.
+#grep '[a-zA-Z]' Archivito busca todas las palabras de la a a la Z
+#grep '[0-9]' busca numeros del 1 al 9 
+#grep '^[0-9]' busca el numero del 1 al 9 y muestra la primera cifra
+#grep '[^0-9]' no busca ningun numero del 1 al 9
+#grep '[0-9]$' la ultima cifra de los numeros que tengan un numero entre 0 y 9
+#grep '[0-9$]' lo contrario a arriba
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+#sed 's/Root/ROOT/' Archivito
+#sed 's/Root/ROOT/g' Archivito
+#sed '1,2d' Archivito
+#sed -e '/Root/d' -e '/ROOT/d' Archivito
+#sed -i '/Root/d' Archivito
+----------------------------------------------------------------------------------------------------------------------------------------------
+Usuarios y permisos.
+
+#-rw- rw - r -- EL GION DEL PRINCIPIO INDICA que es archivo
+#d rw- rw -r -- LA D DEL PRINCIPIO INDICA que es un directorio
+#b-rw- rw - r -- no recuerdo
+
+Permiso de lecutra(read)
+
+rwx
+
+r teine valor 4
+w tiene valor 2
+x tiene valor 1
+
+rwx = 7
+
+r-- = 4
+
+--- = 0
+
+#touch Archivito me va a permitir que si no existe el archivo me lo crea. Si existe el archivo me cambia la fecha y la hora.
+#chmod para cambiar los permisos de user.
+
+si yo tengo
+
+-rw -rw -r--
+entonces
+#chmod 740
+
