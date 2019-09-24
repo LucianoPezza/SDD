@@ -1,0 +1,17 @@
+grep -v '^$' Archivito	Me permite buscar todas las lineas ocupadas con texto salteando las lineas en blanco que hay en mi Archivo.
+grep '^$' Cuenta todos los espacios en blanco que hay en mi archivo.
+grep -i el -i lee tanto minuscula como mayuscula. Elimina el case sensitive
+grep -v permite buscar lo contrario a lo que estoy buscando.
+grep -iv Eliminar el case sensitive y busca lo contrario a lo que quiero.
+grep '[a-zA-Z]' Archivito busca todas las palabras de la a a la Z
+grep '[0-9]' busca numeros del 1 al 9 
+grep '^[0-9]' busca el numero del 1 al 9 y muestra la primera cifra
+grep '[^0-9]' no busca ningun numero del 1 al 9
+grep '[0-9]$' la ultima cifra de los numeros que tengan un numero entre 0 y 9
+grep '[0-9$]' lo contrario a arriba
+---------------------------------------------------------------------------------------------------------------------
+sed 's/Root/ROOT/' Archivito
+sed 's/Root/ROOT/g' Archivito
+sed '1,2d' Archivito
+sed -e '/Root/d' -e '/ROOT/d' Archivito
+sed -i '/Root/d' Archivito
