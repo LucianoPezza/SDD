@@ -1,7 +1,10 @@
+
 IP: 172.105.153.22
 
 #sudo es el admin
 #nano Sirve para crear un archivo y editar dentro de el
+#mkdir[nombre] Crea un directorio
+#ls -ld Midir permite mostrar el directorio
 ---------------------------------------------------------------------------------------------------------------------------------------------
 #grep -v '^$' Archivito	Me permite buscar lo contrario a lo que quiero.
 #grep '^$' Cuenta todos los espacios en blanco que hay en mi archivo.
@@ -64,3 +67,19 @@ ej: chgrp sudo Archivito.
 #ls -l archivo.txt
 -rwx r-x rwx 1 marcos sudo 93 sep 23 21:32 archivo.txt
 #chown marcos: lpadmin archivo.txt
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EJERCICIOS: 
+-CREAR UN DIRECTORIO LLAMADO: MIDIR
+-CAMBIAR LOS PERMISOS APRA
+*Dueño(todos los permisos)
+*grupo(lectura)
+*otros(nada)
+
+-CAMBIAR EL DUEÑO Y GRUPO A:
+
+*dueño(nobody)
+*grupo(users).
+
+-CAMBIAR SOLO EL GRUPO A:
+*nogroups
