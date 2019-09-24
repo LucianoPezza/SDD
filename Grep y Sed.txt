@@ -45,8 +45,22 @@ r-- = 4
 #chmod para cambiar los permisos de user.
 
 si yo tengo
+-rw	- rw	-r--
+ usuario--grupo--otros
+
 
 -rw -rw -r--
 entonces
 #chmod 740
+#chmod +x Archivito me da todo los permisitos.
 
+#chwn alumnos Archivito me permite cambiarle el dueño del archivo
+
+#chgrp users Archivito
+ej: chgrp sudo Archivito.
+
+- rwx r-x rwx 1 marcos marcos 93 sep 23 21:32 archivo.txt
+#chgrp sudo archivo.txt
+#ls -l archivo.txt
+-rwx r-x rwx 1 marcos sudo 93 sep 23 21:32 archivo.txt
+#chown marcos: lpadmin archivo.txt
